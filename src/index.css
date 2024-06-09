@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "ubuntu";
+    transition: all .2s ease-in-out;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+.controlDiv{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.562);
+}
+.allContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.controlContainer{
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    background: white;
+    border-radius: 28px;
+    border: 3px solid hsl(0, 100%, 70%);
+    text-align: center;
+}
+
+.controlContainer p{
+        font-size: 1.5em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(0, 100%, 70%);
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+button:hover{
+    background-color: hsl(0, 100%, 80%);
+}
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Maze{
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    overflow: hidden;
+}
+#maze{
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mazeRow{
+    display: flex;
+    width: fit-content;
+    height: 40px;
+}
+.mazeBlock{
+    min-width: 40px;
+    min-height: 40px;
+    /* border: 1px inset black; */
+    /* background-image: url(../public/clear.webp); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.288);
+}
+
+.mazeBlock img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.mazeBlock:hover{
+    filter: brightness(50%);
+}
+
+.container p{
+    color: white;
+    height: 12px;
+}
+
+
+.other-blocks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 10px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+
+.inventory{
+    width: 60px;
+    height: 60px;
+    background-image: url(../public/select.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inventory:hover{
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.current{
+    filter: brightness(30%);
+}
+
+.inventory img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.buttons{
+    display: flex;
+    gap: 16px;
+}
+.sizeHolder{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.sizeHolder p{
+    font-size:1.0rem;
+    font-weight: normal;
+}
+.sizeHolder .errorSize{
+    color: red;
+    height: 10px;
+}
+.sizeInputs{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizeInputs input{
+    width: 80px;
+    height: 32px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border: 2px solid hsl(0, 100%, 70%);
+    border-radius: 8px;
+
+}
+
+
+.topBar{
+    background: rgba(255, 255, 255, 0.247);
+    width: 40rem;
+    border:2px solid hsl(0, 100%, 70%);
+    border-radius: 1.5rem;
+    padding: 10px;
+
+}
+
+.bar-holder{
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.steveIcon{
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.steveIcon img{
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 5px 0 rgb(26, 26, 26);
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.steveIcon img:hover{
+    box-shadow: 0 0 15px 0 rgb(26, 26, 26);
+}
+
+.steveIcon {
+    color: rgb(223, 223, 223);
+    font-weight: 500;
+}
+
+.steveIcon div h5{
+    color: gray;
+    font-weight: 500;
+}
+.leftMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.bar-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    color: rgb(223, 223, 223);
+    gap: 10px;
+}
+
+.bar-info p{
+    width: 120px;
+    /* background: #000; */
+    text-align: center;
+    font-size: .6rem;
+    color: rgba(223, 223, 223, 0.596);
+}
+
+.batteryholder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+.battery{
+    width: 102px;
+    background: white;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 3px;
+    border: 2px solid hsl(0, 100%, 70%);
+    color: hsl(0, 100%, 70%);
+    cursor: pointer;
+}
+
+.battery .bar{
+    width: 10px;
+    height: 20px;
+    border-radius: 3px;
+    background: hsl(0, 100%, 70%);
+}
+
+.battery .Batt{
+    color: hsl(0, 100%, 70%);
+    width: 100%;
+    text-align: center;
+    animation: i5tifa2 1s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+.battery {
+    font-size: 18px;
+}
+.endBattery{
+    height: 10px;
+    width: 8px;
+    border-radius: 0 10px 10px 0;
+    background: hsl(0, 100%, 70%);
+}
+
+
+
+    
+    @keyframes ripple {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(2);
+            opacity: 0;
+        }
+    }
+
+
+
+.bounce {
+    animation: bounce 3s infinite;
+}
+
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+@keyframes i5tifa2 {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+        100% {
+            opacity: 1;
+        }
+    
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "ImageSrc": "./assets/post1.png",
+        "name": "Post 1",
+        "description": "Description for Post 1",
+        "id" : 1
+    },
+    {
+        "ImageSrc": "./assets/post2.png",
+        "name": "Post 2",
+        "description": "Description for Post 2",
+        "id" : 2
+    },
+    {
+        "ImageSrc": "./assets/post3.png",
+        "name": "Post 3",
+        "description": "Description for Post 3",
+        "id" : 3
+    }
+]
